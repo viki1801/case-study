@@ -20,3 +20,7 @@ class PaidBillsProvider with ChangeNotifier {
     notifyListeners();
   }
 }
+
+// generated_bills_provider.dart
+
+
