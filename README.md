@@ -103,3 +103,84 @@ The `HomePage` in this Flutter application serves as the main navigation hub for
 
 This page ensures a seamless and user-friendly navigation experience within the app.
 
+
+## DashboardPage
+
+The `DashboardPage` in this Flutter application provides users with a comprehensive dashboard interface, featuring:
+
+- **User Profile Display**:
+  - Displays the user's profile image fetched from Firebase Storage.
+  - Shows the user's first name dynamically retrieved from Firestore.
+
+- **Quick Actions**:
+  - Grid-based layout with various quick action buttons.
+  - Actions include managing bills, disconnecting services, transferring data, service requests, complaints, updates, and connectivity statuses.
+
+- **Billing Information**:
+  - Displays detailed billing information in a structured format.
+  - Provides links to navigate to a detailed view of paid bills.
+
+- **UI Design**:
+  - Utilizes a vibrant color scheme with deep purple as the primary color and contrasting shades for clarity.
+  - Modern design elements with circular avatars, iconography, and consistent typography.
+
+- **Integration with Firebase**:
+  - Utilizes Firebase services for user authentication and database management.
+  - Fetches user profile details and dynamically updates the UI using Firestore streams.
+
+This page offers a user-friendly dashboard experience with intuitive navigation and real-time data updates for enhanced usability.
+
+
+## AccountPage
+
+The `AccountPage` in this Flutter application provides users with account management features, including:
+
+- **User Profile Display**:
+  - Displays the user's profile picture fetched from Firestore.
+  - Shows the user's full name and email address.
+
+- **Change Password**:
+  - Allows users to navigate to the Change Password page for updating their password.
+
+- **Delete Account**:
+  - Provides a dialog confirmation before deleting the user account.
+  - Deletes user data from Firestore and authentication records upon confirmation.
+  - Signs out the user and navigates to the login page upon successful deletion.
+
+- **Logout**:
+  - Allows users to sign out directly from their account.
+
+- **UI Design**:
+  - Features an AppBar with a deep purple color scheme for consistent branding.
+  - Utilizes ListTile widgets for clear and accessible navigation options.
+
+- **Integration with Firebase**:
+  - Uses Firebase Authentication for user management.
+  - Retrieves and displays user data from Firestore in real-time using FutureBuilder.
+
+This page ensures secure and efficient management of user accounts with integrated Firebase services for authentication and data storage.
+
+
+## ChangePasswordPage
+
+The `ChangePasswordPage` in this Flutter application allows users to securely change their account password with the following features:
+
+- **Form Validation**:
+  - Validates the input fields for the old password, new password, and confirmation.
+  - Ensures that passwords match and are correctly entered before proceeding.
+
+- **Password Security**:
+  - Provides visibility toggles for each password field to show or hide the entered text for user convenience.
+
+- **Firebase Authentication**:
+  - Reauthenticates the user using their current credentials before allowing a password change.
+  - Uses Firebase Authentication services to update the user's password securely.
+
+- **Error Handling**:
+  - Displays error messages using SnackBars if password change fails due to incorrect credentials or other issues.
+
+- **UI Design**:
+  - Features a simple and intuitive UI with an AppBar for navigation and a form layout for input fields and buttons.
+  - Utilizes Material Design principles with elevated buttons and text form fields for clarity.
+
+This page ensures a streamlined and secure process for users to update their passwords within the application.
